@@ -267,7 +267,6 @@ function checkAnswer(button){
 	$('#progressBar').remove();	
 	//check to see if an answer is selected and we're waiting for them to click continue - i.e. no double clciks
 	if(questionPending === false){
-		questionPending=true;
 		answer = $(button).data('value');
 		//verify correct answer
 		if(answer == triviaJSON[currentQuestion].correct_answer){
@@ -280,6 +279,7 @@ function checkAnswer(button){
 }
 
 function answerCorrect(button){
+	questionPending = true;
 	correctAnswers++;
 	//highlight correct answer
 	$(button).removeClass('btn-primary');
@@ -297,6 +297,7 @@ function answerCorrect(button){
 }
 
 function answerIncorrect(isTimer,button){
+	questionPending = true;
 	var msg = '';
 	//timer ends question
 	if(isTimer === 1){
