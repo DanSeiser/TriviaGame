@@ -263,10 +263,11 @@ function checkAnswer(button){
 	//clear question timer
 	clearInterval(questionTimer);
 	clearInterval(continueTimer);
-	$('#timerText').remove();
-	$('#progressBar').remove();	
+
 	//check to see if an answer is selected and we're waiting for them to click continue - i.e. no double clciks
 	if(questionPending === false){
+		$('#timerText').remove();
+		$('#progressBar').remove();	
 		answer = $(button).data('value');
 		//verify correct answer
 		if(answer == triviaJSON[currentQuestion].correct_answer){
