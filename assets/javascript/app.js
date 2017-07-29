@@ -134,6 +134,7 @@
 	
 	//go to a given question
 	function goToQuestion(questionID){
+		clearInterval(continueTimer);
 		//Allows answers to be selected
 		questionPending = false;
 		//clear the trivia content and rebuild
