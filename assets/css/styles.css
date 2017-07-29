@@ -1,0 +1,45 @@
+	#errMsg{
+		margin-top: 5px;
+		font-weight: bold;
+	}
+	.infobox{
+		margin-top: 5px;
+	}
+	#main-content{
+		position: absolute;
+		top: 15%;
+	}
+	body{
+		background-image: url('../images/background.png');
+		background-repeat: no-repeat;
+		background-size:cover;
+		
+	}
+	.option{
+		width: 75%;
+		margin: 1em;
+	}
+	#title{
+		font-weight: bold;
+	}
+	#trivia-panel{
+		min-height: 500px;
+		
+	}
+	.difficulty{
+
+		font-weight: bold;
+	}
+	.trivia_hard{
+		color: red;
+	}
+	.trivia_medium{
+		color: orange;
+	}
+	.trivia_easy{
+		color: green;
+	}
+	
+	.continue-btn{
+		margin: 5px;
+	}

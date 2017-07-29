@@ -1,0 +1,81 @@
+<html>
+	<head>
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="assets/javascript/app.js"></script>
+
+<link rel="stylesheet" tyle='text/css' href="assets/css/styles.css">
+
+
+</head>
+<body>
+	
+<div class="container-fluid" id="main-container">
+
+	
+	<div class="col-xs-6 col-xs-offset-3" id="main-content" >
+		<div class="panel panel-default" id="trivia-panel">
+		  <div class="panel-heading">
+		    <h3 class="panel-title" id="title">Totally Awesome Trivia</h3>
+		  </div>
+		  <div class="panel-body" id="trivia-form-container">
+			<div id="trivia-form">
+				<label for="trivia_amount">Select Number of Questions: </label>
+				<br>
+					<select name="trivia_amount" id="trivia_amount"  class="form-control"></select>
+				<br>
+				<label for="trivia_category">Select Category: </label>
+				<br>
+				<select name="trivia_category" id="trivia_category" class="form-control">
+					<option value="any">Any Category</option>	
+				</select>
+				<br>
+		
+				<label for="trivia_difficulty">Select Difficulty: </label>
+				<select name="trivia_difficulty"  id="trivia_difficulty" class="form-control">
+					<option value="any">Any Difficulty</option>
+					<option value="easy">Easy</option>
+					<option value="medium">Medium</option>
+					<option value="hard">Hard</option>
+				</select>
+		
+				<br>
+		
+				<label for="trivia_type">Select Type: </label>
+				<select name="trivia_type"  id="trivia_type" class="form-control">>
+					<option value="any">Any Type</option>
+					<option value="multiple">Multiple Choice</option>
+					<option value="boolean">True / False</option>
+				</select>
+				<br>
+			</div>
+			<div class="row" id="start-button">
+				<div class="col-xs-12 text-center">
+					<button class="btn btn-disabled" id="startButton">Loading</button>
+				</div>
+			</div>
+			<div class="row" id="errDiv" class="hidden">
+				<div class="col-xs-6 col-xs-offset-3 alert-warning hidden" id="errMsg"></div>
+			</div>
+		</div>
+		<div class="panel-body hidden" id="trivia-content">
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
